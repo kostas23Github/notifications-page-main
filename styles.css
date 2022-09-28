@@ -1,0 +1,95 @@
+/* UNIVERSAL STYLES */
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+html, 
+body {
+    background-color: hsl(210, 60%, 98%);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', 'sans-serif';
+    font-weight: 500;
+    width: 100%;
+}
+
+main {
+    width: 55%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+}
+
+section {
+    margin: 2%;
+}
+
+/* NOTIFICATIONS PAGE STYLES */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification {
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    background-color: hsl(210, 60%, 95%);
+    border-radius: 10px;
+    margin: 5px;
+    height: 80px;
+}
+
+img.notification-avatar {
+    width: 8%;
+    margin: 10px;
+}
+
+.notification-content {
+    padding: 5px 5px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* NOTIFICATION STYLE */
+
+p.text > span.name {
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+}
+p.text > span.event {
+    font-weight: 800;
+    color: rgb(48, 48, 48);
+}
+
+p.text > span.chess-club {
+    color: hsl(238, 72%, 25%);
+    font-weight: 800;
+}
+
+p.text {
+    color: rgb(48, 48, 48);
+    font-size: 0.6rem;
+}
+
+p.time {
+    opacity: 0.6;
+    font-size: 0.6rem;
+}
+
+p.msg {
+    font-size: 0.6rem;
+    color: rgb(48, 48, 48);
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 2px;
+    margin-left: 40px;
+    width: 80%;
+}

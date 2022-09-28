@@ -36,17 +36,24 @@ section {
 }
 
 .notification {
-    display: flex;
-    justify-content: center;
+    display: flex; 
     box-sizing: content-box;
-    background-color: hsl(210, 60%, 95%);
     border-radius: 10px;
     margin: 5px;
-    overflow: hidden;
+    padding-left: 10px;
+}
+
+.unread {
+    background-color: hsl(210, 60%, 95%);
+}
+
+.read {
+    background-color: hsl(0, 0%, 100%);
 }
 
 img.notification-avatar {
-    width: 5%;
+    width: 30px;
+    height: 30px;
     margin: 10px;
 }
 
@@ -56,6 +63,11 @@ img.notification-avatar {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+img.notification-response {
+    width: 40px;
+    margin: 6px;
 }
 
 /* NOTIFICATION STYLE */
@@ -80,6 +92,10 @@ p.text {
     font-size: 0.6rem;
     margin: 0%;
 }
+.unread p.text::after {
+    content: url(./assets/images/icons8-filled-circle-8.png);
+    margin-left: 2px;
+}
 
 p.time {
     opacity: 0.6;
@@ -94,4 +110,18 @@ p.msg {
     border-radius: 2px;
     width: 80%;
     padding: 5px;
+}
+
+/* STATES */
+
+p.msg:hover {
+    background-color: hsl(211, 68%, 94%);
+}
+
+p.text > span.name:hover,
+p.text > span.event:hover,
+p.text > span.chess-club:hover,
+.set-read:hover {
+    color:hsl(238, 72%, 25%);
+    cursor: pointer;
 }

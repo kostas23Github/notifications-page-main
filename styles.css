@@ -42,11 +42,11 @@ section {
     background-color: hsl(210, 60%, 95%);
     border-radius: 10px;
     margin: 5px;
-    height: 80px;
+    overflow: hidden;
 }
 
 img.notification-avatar {
-    width: 8%;
+    width: 5%;
     margin: 10px;
 }
 
@@ -63,6 +63,7 @@ img.notification-avatar {
 p.text > span.name {
     font-weight: 800;
     color: rgb(0, 0, 0);
+    margin: 0%;
 }
 p.text > span.event {
     font-weight: 800;
@@ -77,19 +78,20 @@ p.text > span.chess-club {
 p.text {
     color: rgb(48, 48, 48);
     font-size: 0.6rem;
+    margin: 0%;
 }
 
 p.time {
     opacity: 0.6;
     font-size: 0.6rem;
+    margin: 0%;
 }
 
 p.msg {
     font-size: 0.6rem;
     color: rgb(48, 48, 48);
-    border: 1px solid black;
-    padding: 2px;
+    border: 1px solid hsl(219, 12%, 42%);
     border-radius: 2px;
-    margin-left: 40px;
     width: 80%;
+    padding: 5px;
 }

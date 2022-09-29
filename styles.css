@@ -103,13 +103,24 @@ p.time {
     margin: 0%;
 }
 
-p.msg {
+.unread p.msg {
     font-size: 0.6rem;
     color: rgb(48, 48, 48);
     border: 1px solid hsl(219, 12%, 42%);
     border-radius: 2px;
     width: 80%;
     padding: 5px;
+    display: none;
+}
+
+.read p.msg {
+    font-size: 0.6rem;
+    color: rgb(48, 48, 48);
+    border: 1px solid hsl(219, 12%, 42%);
+    border-radius: 2px;
+    width: 80%;
+    padding: 5px;
+    display: block;
 }
 
 /* STATES */

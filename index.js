@@ -41,10 +41,19 @@ const markAllAsRead = () => {
 
 let allRead = document.querySelector(".set-read");
 allRead.addEventListener('click', markAllAsRead);
-// BREAKDOWN OF unreadNotifications
 
+const toggleMsg = () => {
+    let msg = document.querySelector('.msg');
+    
+    if (msg.style.display === 'block') {
+        msg.style.display = 'none';
+    } else {
+        msg.style.display = 'block';
+    }
+}
+
+document.querySelector(".fourth").addEventListener('click', toggleMsg)
+
+// BREAKDOWN OF unreadNotifications
 // notificationsContainer.children returns an array-like obj which cannot be iterated by forEach
 // so it is converted to an array with Array.from
-
-
-//document.querySelector('.set-read').addEventListener('click', );

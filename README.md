@@ -19,8 +19,8 @@ A social media notifications page. The user can see the notifications, the numbe
 
 ### Screenshot
 
-![Desktop View](./assets/images/Screenshot_1.png)
-![Mobile View](./assets/images/Screenshot_2.png)
+[Desktop View](./assets/images/Screenshot_1.png)
+[Mobile View](./assets/images/Screenshot_2.png)
 ### Links
 
 - [Solution URL](https://github.com/kostas23Github/notifications-page-main)

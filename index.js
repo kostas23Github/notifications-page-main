@@ -11,22 +11,21 @@ notifications.forEach(notification => notification.addEventListener('click', () 
 }));
 
 // Handles header's notification counter
-
+let unreadIndex = document.querySelector('.unreadIndex');
 const unreadNotifications = () => {
     let header = document.querySelector(".header");
     let noOfUnread = document.querySelectorAll(".unread").length;
-    //console.log(noOfUnread)
+    
     if (noOfUnread === 1) {
-        return header.innerHTML = `Notification 1`;
+        unreadIndex.textContent = noOfUnread;
     } else if (noOfUnread === 0) {
         return header.innerHTML = `All read`;
     } else {
-        return header.innerHTML = `Notifications ${noOfUnread}`;
+        return unreadIndex.textContent = noOfUnread;
     }
 }
 
-document.querySelector(".header").innerHTML = unreadNotifications();
-
+window.onload = unreadNotifications();
 notifications.forEach(notification => notification.addEventListener('click', unreadNotifications));
 
 // Handles header's Mark all as read

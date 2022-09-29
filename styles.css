@@ -10,7 +10,7 @@ body {
     background-color: hsl(210, 60%, 98%);
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Plus Jakarta Sans', 'sans-serif';
     font-weight: 500;
     width: 100%;
@@ -18,14 +18,12 @@ body {
 
 main {
     width: 55%;
-    margin: 10px auto;
-    padding: 15px;
+    position: relative;
+    top: 50px;
+    margin: 0px auto;
+    padding: 35px 25px;
     border-radius: 5%;
     background-color: rgb(255, 255, 255);
-}
-
-section {
-    margin: 2%;
 }
 
 /* NOTIFICATIONS PAGE STYLES */
@@ -33,14 +31,38 @@ section {
 .header-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.header {
+    font-weight: 800;
+}
+
+.header > p {
+    margin: 0;
+}
+
+.unreadIndex {
+    color: white;
+    background-color: hsl(238, 72%, 25%);
+    border-radius: 3px;
+    padding: 3px 7px;
+    margin-left: 10px;
+    box-shadow: inset 1px 1px 3px hsl(210, 60%, 95%),
+    1px 1px 1px 0.5px hsl(219, 12%, 42%);
+}
+
+.set-read {
+    font-size: 0.8rem;
 }
 
 .notification {
     display: flex; 
     box-sizing: content-box;
     border-radius: 10px;
-    margin: 5px;
-    padding-left: 10px;
+    margin: 10px;
+    padding: 5px 0 5px 10px;
 }
 
 .unread {
@@ -51,6 +73,8 @@ section {
     background-color: hsl(0, 0%, 100%);
 }
 
+/* NOTIFICATION STYLE */
+/* AVATAR */
 img.notification-avatar {
     width: 30px;
     height: 30px;
@@ -70,8 +94,7 @@ img.notification-response {
     margin: 6px;
 }
 
-/* NOTIFICATION STYLE */
-
+/* TEXT */
 p.text > span.name {
     font-weight: 800;
     color: rgb(0, 0, 0);
@@ -136,3 +159,5 @@ p.text > span.chess-club:hover,
     color:hsl(238, 72%, 25%);
     cursor: pointer;
 }
+
+/* MOBILE VIEW */

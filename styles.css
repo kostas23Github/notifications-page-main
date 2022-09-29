@@ -5,7 +5,7 @@
     src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
 }
 
-html, 
+html,
 body {
     background-color: hsl(210, 60%, 98%);
     margin: 0;
@@ -37,10 +37,7 @@ main {
 
 .header {
     font-weight: 800;
-}
-
-.header > p {
-    margin: 0;
+    line-height: 18px;
 }
 
 .unreadIndex {
@@ -50,15 +47,21 @@ main {
     padding: 3px 7px;
     margin-left: 10px;
     box-shadow: inset 1px 1px 3px hsl(210, 60%, 95%),
-    1px 1px 1px 0.5px hsl(219, 12%, 42%);
+        1px 1px 1px 0.5px hsl(219, 12%, 42%);
+}
+
+.notificationsBannerHidden {
+    display: none;
 }
 
 .set-read {
     font-size: 0.8rem;
+    margin: 0%;
+    line-height: 28px;
 }
 
 .notification {
-    display: flex; 
+    display: flex;
     box-sizing: content-box;
     border-radius: 10px;
     margin: 10px;
@@ -66,7 +69,7 @@ main {
 }
 
 .unread {
-    background-color: hsl(210, 60%, 95%);
+    background-color: hsl(211, 68%, 94%);
 }
 
 .read {
@@ -95,17 +98,18 @@ img.notification-response {
 }
 
 /* TEXT */
-p.text > span.name {
+p.text>span.name {
     font-weight: 800;
     color: rgb(0, 0, 0);
     margin: 0%;
 }
-p.text > span.event {
+
+p.text>span.event {
     font-weight: 800;
     color: rgb(48, 48, 48);
 }
 
-p.text > span.chess-club {
+p.text>span.chess-club {
     color: hsl(238, 72%, 25%);
     font-weight: 800;
 }
@@ -115,6 +119,7 @@ p.text {
     font-size: 0.6rem;
     margin: 0%;
 }
+
 .unread p.text::after {
     content: url(./assets/images/icons8-filled-circle-8.png);
     margin-left: 2px;
@@ -149,15 +154,25 @@ p.time {
 /* STATES */
 
 p.msg:hover {
-    background-color: hsl(211, 68%, 94%);
+    background-color: hsl(205, 33%, 90%);
 }
 
-p.text > span.name:hover,
-p.text > span.event:hover,
-p.text > span.chess-club:hover,
+p.text>span.name:hover,
+p.text>span.event:hover,
+p.text>span.chess-club:hover,
 .set-read:hover {
-    color:hsl(238, 72%, 25%);
+    color: hsl(238, 72%, 25%);
     cursor: pointer;
 }
 
 /* MOBILE VIEW */
+
+@media only screen and (max-width: 450px) {
+
+    main {
+        width: 90%;
+        margin: 10px auto;
+        padding: 20px 10px;
+        top: 0;
+    }
+}
